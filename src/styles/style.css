@@ -137,8 +137,8 @@ body {
     width: 100%;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
 }
 
 .app .page .Page-info .left-data {
@@ -215,9 +215,154 @@ body {
 
 .app .page .Page-info .right-data {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
     gap: 20px;
+}
+
+.app .page .Page-info .right-data .healthData {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.app .page .Page-info .right-data .healthData .cards {
+    width: 250px;
+    padding: 30px 0;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.app .page .Page-info .right-data .healthData .cards div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.app .page .Page-info .right-data .testReports {
+    width: 100%;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.app .page .Page-info .right-data .testReports .reports {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.app .page .Page-info .right-data .testReports .reports .frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.app .page .Page-info .right-data .testReports .reports .frame ion-icon {
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.app .page .Page-info .right-data .testReports .reports .frame #first {
+    color: #025267;
+    background-color: #0253673d;
+}
+
+.app .page .Page-info .right-data .testReports .reports .frame #second {
+    color: #f1a933;
+    background-color: #f1a8332f;
+}
+
+.app .page .Page-info .right-data .testReports .reports .frame #third {
+    color: #db6051;
+    background-color: #db615133;
+}
+
+.app .page .Page-info .right-data .testReports .reports .frame div {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.app .page .Page-info .right-data .testReports .reports .frame div h5 {
+    color: rgba(0, 0, 0, 0.486);
+}
+
+.app .page .Page-info .right-data .prescriptions {
+    width: 100%;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.app .page .Page-info .right-data .prescriptions .addPrescription {
+    width: 100%;
+    padding: 17px 0;
+    color: #44bc8e;
+    border-radius: 10px;
+    border: 2px dashed #44bc8e49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.app .page .Page-info .right-data .prescriptions .addPrescription:hover {
+    color: white;
+    background-color: #44bc8e
+}
+
+.app .page .Page-info .right-data .prescriptions .prescriptionsData {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app .page .Page-info .right-data .prescriptions .prescriptionsData table,
+.app .page .Page-info .right-data .prescriptions .prescriptionsData table tr {
+    width: 100%;
+}
+
+.app .page .Page-info .right-data .prescriptions .prescriptionsData table tbody .name {
+    margin: 15px 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.app .page .Page-info .right-data .prescriptions .prescriptionsData table tbody .name ion-icon {
+    padding: 11px;
+    font-size: 22px;
+    color: #f1a933;
+    border-radius: 10px;
+    background-color: #f1a8332f;
 }
 
