@@ -1,4 +1,3 @@
-import user from "../data/user";
 
 function TopBar() {
 	return (
@@ -10,8 +9,8 @@ function TopBar() {
 			<div className="data">
                 <ion-icon name="moon-outline" id="theme"></ion-icon>
                 <div className="userData">
-                    <img src={user.userImage} alt=""></img>
-                    <h5>{user.userName}</h5>
+                    <img src={"/media/user-image.jpg"} alt=""></img>
+                    <h5>Dr. Alex Hess</h5>
                     <ion-icon name="chevron-down-outline"></ion-icon>
                 </div>
             </div>

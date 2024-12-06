@@ -1,32 +1,44 @@
-let user = {
-	logo: "/media/logo.jpg",
-    userImage: "/media/user-image.jpg",
-    userName: "Dr. Alex Hess",
-    userImageChange : "/media/user-image2.jpg",
-    userNameChange: "Roger Curtis",
-    age: "Age: 36",
-
-    userInfo: {
-        Gender: "Male",
-        BloodType: "O+ (Positive)",
-        Allergies: "Milk, Penicilin",
-        Diseases: "Diabetes, Blood Disorders",
-        Height: "1.78m",
-        Weight: "65 kg",
-        PatientID: "208898786",
-        LastVisit: "25th October 2019"
+const user = {
+    id: 1,
+    name: "Roger Curtis",
+    age: 36,
+    profileImage: "/media/user-image2.jpg",
+    vitals: [
+        {
+            logo: "/media/heart-rate.jpg",
+            title: "Heart Rate",
+            value: "80 bpm",
+        },
+        {
+            logo: "/media/body-temperature.jpg",
+            title: "Body Temperature",
+            value: "36.5°C",
+        },
+        {
+            logo: "/media/glucose.jpg",
+            title: "Glucose",
+            value: "100 mg/dl",
+        },
+    ],
+    information: {
+        gender: "Male",
+        bloodType: "O+ (Positive)",
+        allergies: ["Milk", "Penicillin"],
+        diseases: ["Diabetes", "Blood Disorders"],
+        height: "1.78m",
+        weight: "65 kg",
+        patientId: "208898786",
+        lastVisit: "25th October 2019",
     },
-
-    healthInfo: {
-        heartRate: { value: "80", unit: "bpm" },
-        bodyTemperature: { value: "36.5", unit: "°C" },
-        glucose: { value: "100", unit: "mg/dl" }
-    },
-
-    PrescriptionsData: {
-        first: { name: "Heart Diseases", date: "25th October 2019", duration: "3 months" },
-        second: { name: "Skin Care", date: "8th August 2019", duration: "2 months" }
-    }
+    testReports: [
+        { testName: "CT Scan - Full Body", date: "12th February 2020", id: "first" },
+        { testName: "Creatine Kinase T", date: "12th February 2020", id: "second" },
+        { testName: "Eye Fluorescein Test", date: "12th February 2020", id: "third" },
+    ],
+    prescriptions: [
+        { name: "Heart Diseases", date: "25th October 2019", duration: "3 months" },
+        { name: "Skin Care", date: "8th August 2019", duration: "2 months" },
+    ],
 };
 
 export default user;

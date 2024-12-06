@@ -1,9 +1,8 @@
-import user from "../data/user";
 
 function SideBar() {
 	return (
 		<div className="side-bar">
-                  <img src={user.logo} alt=""></img>
+                  <img src={"/media/logo.jpg"} alt=""></img>
 			<div className="side-btns">
                         <div className="hovered"></div>
                         <ion-icon name="grid-outline" id="checked"></ion-icon>

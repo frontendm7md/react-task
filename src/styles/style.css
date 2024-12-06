@@ -201,16 +201,11 @@ body {
     gap: 20px;
 }
 
-.app .page .Page-info .left-data .userInfo .Info div {
-    width: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-}
-
-.app .page .Page-info .left-data .userInfo .Info div h5 {
+.app .page .Page-info .left-data .userInfo .Info h5 {
     color: rgba(0, 0, 0, 0.377);
+    display: inline-block;
+    margin-left: 20px;
+    padding: 8px;
 }
 
 .app .page .Page-info .right-data {
