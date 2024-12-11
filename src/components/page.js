@@ -1,3 +1,5 @@
+import { useContext } from "react";
+import { ThemeContext } from "../App";
 import user from "../data/user";
 
 function Page() {
@@ -20,7 +22,7 @@ function Page() {
     
     function Vital({value}) {
         return(
-            <div className="cards">
+            <div className={"cards" + (theme === "light" ? "" : " dark")}>
                 <img src={value.logo} alt=""></img>
                 <span>{value.title}</span>
                 <div>
@@ -82,18 +84,20 @@ function Page() {
         }
         return elements
     }
+
+    let { theme } = useContext(ThemeContext);
     return (
-        <div className="page">
+        <div className={"page" + (theme === "light" ? "" : " dark")}>
             <h2>Current Appointment</h2>
             <div className="Page-info">
                 <div className="left-data">
-                    <div className="user-changes">
+                    <div className={"user-changes" + (theme === "light" ? "" : " dark")}>
                         <img src={user.profileImage} alt=""></img>
                         <h4>{user.name}</h4>
                         <h6>Age: {user.age}</h6>
                         <button>Update</button>
                     </div>
-                    <div className="userInfo">
+                    <div className={"userInfo" + (theme === "light" ? "" : " dark")}>
                         <h3>Information:</h3>
                         <div className="Info">
                             <table>
@@ -106,11 +110,11 @@ function Page() {
                     <div className="healthData">
                         <Vitals user={user} />
                     </div>
-                    <div className="testReports">
+                    <div className={"testReports" + (theme === "light" ? "" : " dark")}>
                         <h3>Test Reports</h3>
                         <div className="reports"><TestReports user={user} /></div>
                     </div>
-                    <div className="prescriptions">
+                    <div className={"prescriptions" + (theme === "light" ? "" : " dark")}>
                         <h3>Prescriptions</h3>
                         <div className="addPrescription">
                             <ion-icon name="add-outline"></ion-icon>

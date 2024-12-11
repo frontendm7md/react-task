@@ -1,7 +1,10 @@
+import { useContext } from "react";
+import { ThemeContext } from "../App";
 
 function SideBar() {
+      let { theme } = useContext(ThemeContext);
 	return (
-		<div className="side-bar">
+		<div className={"side-bar" + (theme === "light" ? "" : " dark")}>
                   <img src={"/media/logo.jpg"} alt=""></img>
 			<div className="side-btns">
                         <div className="hovered"></div>

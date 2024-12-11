@@ -83,7 +83,7 @@ body {
 }
 
 .app .top-bar .back {
-    color: #333333d7;
+    opacity: 0.6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,16 +98,30 @@ body {
     gap: 15px;
 }
 
+.app .top-bar .data img {
+    border-radius: 50%;
+}
+
 .app .top-bar .data #theme {
     padding: 10px;
-    color: #333333d7;
+    opacity: 0.6;
     font-size: 23px;
     border-radius: 50%;
     cursor: pointer;
 }
 
+.app .page.dark, .app .top-bar.dark {
+    background-color: #23272f;
+    color: #ffffff;
+}
+.app .side-bar.dark, .app .user-changes.dark, .app .userInfo.dark, .app .cards.dark, .app .testReports.dark,.app .prescriptions.dark {
+    background-color: #343a46 !important;
+    color: white;
+}
+
 .app .top-bar .data #theme:hover {
-    background-color: #3333331c;
+    opacity: 0.6;
+    background-color: rgba(0, 0, 0, 0.342);
 }
 
 .app .top-bar .data .userData {
@@ -161,8 +175,12 @@ body {
     gap: 10px;
 }
 
+.app .page .Page-info .left-data .user-changes img {
+    border-radius: 25px;
+}
+
 .app .page .Page-info .left-data .user-changes h6 {
-    color: rgba(0, 0, 0, 0.459);
+    opacity: 0.6;
     font-size: 13px;
 }
 
@@ -202,7 +220,7 @@ body {
 }
 
 .app .page .Page-info .left-data .userInfo .Info h5 {
-    color: rgba(0, 0, 0, 0.377);
+    opacity: 0.6;
     display: inline-block;
     margin-left: 20px;
     padding: 8px;
@@ -300,7 +318,7 @@ body {
 }
 
 .app .page .Page-info .right-data .testReports .reports .frame div h5 {
-    color: rgba(0, 0, 0, 0.486);
+    opacity: 0.6;
 }
 
 .app .page .Page-info .right-data .prescriptions {
