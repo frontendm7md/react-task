@@ -137,6 +137,64 @@ body {
     height: 30px;
 }
 
+.app .top-bar .data .user-menu {
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 75px;
+    background-color: white;
+    box-shadow: 0 0 7px 0px rgba(0, 0, 0, 0.11);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 5;
+}
+.app .top-bar .data .user-menu.dark {
+    color: white;
+    background-color: #343a46;
+    box-shadow: 0 0 7px 0px rgba(245, 245, 245, 0.144);
+}
+.app .top-bar .data .user-menu .user-info {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    transition: all .3s;
+}
+.app .top-bar .data .user-menu .user-info:hover, .app .top-bar .data .user-menu .profile-option:hover, .app .top-bar .data .user-menu .logout-option:hover {
+    background-color: rgba(0, 0, 0, 0.048);
+}
+.app .top-bar .data .user-menu .user-info img {
+    width: 60px;
+    height: 60px;
+}
+.app .top-bar .data .user-menu .user-info div span {
+    font-size: 13px;
+}
+.app .top-bar .data .user-menu .profile-option {
+    width: 100%;
+    padding: 10px;
+    color: rgb(21, 122, 255);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+.app .top-bar .data .user-menu .logout-option {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    color: rgb(230, 81, 81);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+}
+
 .app .page {
     width: 100%; height: calc(100% - 60px);
     padding: 0 40px;
