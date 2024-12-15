@@ -94,8 +94,13 @@ function Page() {
         duration: ""
     })
     function AddNewPrescription() {
-        SetAddPrescription(!AddPrescription)
-        user.prescriptions.push(NewPrescription)
+        if (NewPrescription.name === "" | NewPrescription.date === "" | NewPrescription.duration === "") {
+            SetAddPrescription(!AddPrescription)
+        }
+        else {
+            SetAddPrescription(!AddPrescription)
+            user.prescriptions.push(NewPrescription)
+        }
         SetNewPrescription({name: "", date: "", duration: ""})
     }
     return (
