@@ -1,0 +1,54 @@
+
+
+@media only screen and (max-width: 1050px) {
+    .Page-info {
+        align-items: center;
+        flex-direction: column;
+        .left-data {
+            width: 100%;
+            flex-direction: row !important;
+        }
+    }
+}
+@media only screen and (max-width: 850px) {
+    .left-data {
+        flex-wrap: wrap;
+        .user-changes {
+            width: 100% !important;
+        }
+        .userInfo {
+            width: 100% !important;
+            table {
+                width: 100%;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 580px) {
+    .side-bar {
+        width: 100% !important;
+        height: auto !important;
+        padding: 10px !important;
+        top: auto !important;
+        bottom: 0;
+        flex-direction: row !important;
+        gap: 0px !important;
+        z-index: 5;
+        .side-btns {
+            padding-top: 10px;
+            margin-left: -48px;
+            flex-direction: row !important;
+            .hovered {
+                width: 30px !important;
+                height: 4px !important;
+                position: relative !important;
+                top: -18px !important;
+                left: 61px !important;
+            }
+        }
+    }
+    .right-side {
+        width: 100% !important;
+    }
+}
+
